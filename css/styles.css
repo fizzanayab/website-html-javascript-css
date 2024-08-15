@@ -6,95 +6,247 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-color: #f8f9fa;
     color: #333;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    padding: 1rem 2rem;
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 0;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+.navbar-brand {
+    color: #4d3223;
+    font-size: 1.5rem;
 }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+.navbar-nav .nav-link {
+    color: #4d3223;
+    margin-right: 1rem;
 }
 
-.nav-links li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+.navbar-nav .nav-link:hover {
+    color: #f7b88b;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('hero-image.jpg');
+    height: 100vh;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5fac2d5-4dad-4187-a2ae-40603c99b8db/dg2mslf-d558db08-00df-4536-9d85-92d8e5fae177.jpg/v1/fill/w_1280,h_720,q_75,strp/vintage_aesthetic_desktop_wallpaper_by_franzhere_dg2mslf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTVmYWMyZDUtNGRhZC00MTg3LWEyYWUtNDA2MDNjOTliOGRiXC9kZzJtc2xmLWQ1NThkYjA4LTAwZGYtNDUzNi05ZDg1LTkyZDhlNWZhZTE3Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.8cRORWEy4Q876gdeA0IH_PRgEbNked-WFHAry1GmYfI');
     background-size: cover;
     background-position: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 5rem 2rem;
 }
 
-.hero-content h1 {
+.hero h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    animation: fadeInDown 1.5s ease-in-out;
 }
 
-.cta-button {
-    background-color: #333;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
-.cta-button:hover {
-    background-color: #555;
+.hero .btn-primary {
+    margin-top: 1.5rem;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 /* About Section */
-.about {
-    padding: 3rem 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.about .content h2 {
-    margin-bottom: 1rem;
-}
-
-.about .content p {
-    max-width: 600px;
-    margin: 0 auto;
+.about img {
+    width: 100%;
+    height: auto;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 /* Services Section */
-.services {
-    padding: 3rem 2rem;
-    text-align: center;
+.services .service-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.service {
-    margin-bottom: 2rem;
+.services .service-box:hover {
+    transform: translateY(-10px);
 }
 
-.service h3 {
-    margin-bottom: 0.5rem;
+/* Slider Section */
+.slider-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev, .slick-next {
+    color: black;
+}
+
+/* Portfolio Section */
+.portfolio img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #8b6c56;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+footer ul li a {
     color: white;
-    text-align: center;
-    padding: 1rem 0;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.service1{
+    background-image: url("https://www.cosmeticsdesign-europe.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/cosmetics/cosmeticsdesign-europe.com/headlines/market-trends/androgynous-beauty-makeup-for-men-and-gender-free-fragrance/8714515-1-eng-GB/Androgynous-beauty-makeup-for-men-and-gender-free-fragrance.jpg");
+}
+.service2{
+    background-image: url("https://media.istockphoto.com/id/1222813577/photo/capsule-clothes-in-beige-and-pink-colors-closeup.jpg?s=612x612&w=0&k=20&c=1Q2tr0WLE9g1Z3pzy2UYkRvMrH9yiRm9Uy_96T5z3mQ=");
+}
+
+.service3{
+    background-image: url("https://img.freepik.com/premium-photo/flat-lay-stylish-accessories-beige-background_36682-248962.jpg");
+}
+
+
+
+
+.slide1 img {
+    width: 100%;
+    height: 650px;
+}
+ 
+
+.proj img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* Custom Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.proj .gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Portfolio Section */
+.proj {
+    cursor: pointer;
+}
+
+/* Slider */
+.slider-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .slider-container img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-container img {
+        height: 200px;
+    }
+
+    .about img, .services img, .portfolio img {
+        height: 200px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
