@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
+   
+         
     <div class="preloader">
         <img width="150" src="https://i.pinimg.com/originals/ce/f8/d7/cef8d7dcaec0ba37f6eebba23804bc85.gif" alt="">
     </div>
@@ -22,16 +24,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><div class="app">
-                <a class=" js-scroll" href="index.html">
-        
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    VINTAGE
-                </a>
-            </div></a>
+            <a class="navbar-brand tex" href="#"><span class="v">V</span>INTAGE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,7 +45,7 @@
         <div class="hero-content">
             <h1 class="display-4">Welcome to My Website</h1>
             <p class="lead">Your journey to excellence begins here</p>
-            <a href="#about" class="btn btn-primary btn-lg">Get Started</a>
+            <a href="#about" class="btn btn-warning btn-lg">Get Started</a>
         </div>
     </section>
 
@@ -64,9 +57,52 @@
                     <h2>About Us</h2>
                     <p>We are dedicated to providing the best service to our clients. Our team is experienced in various fields and committed to excellence.</p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/gettyimages-1217174336-612x612.jpg" class="img-fluid" alt="About Us">
+                <div class="col-lg-6 position-relative">
+                 <img src="img/gettyimages-1217174336-612x612.jpg" class="img-fluid" alt="About Us">
+                 <div class="bulbs d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle-x">
+                    <div class="bulb-container d-flex gap-3">
+                        <div class="bulb bulb-1">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                        <div class="bulb bulb-2">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                        <div class="bulb bulb-3">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                        <div class="bulb bulb-4">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                        <div class="bulb bulb-5">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                        <div class="bulb bulb-6">
+                            <div class="bulb__bottom"></div>
+                            <div class="bulb__top">
+                                <div class="bulb__light"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+                </div>
+                   
+                
             </div>
         </div>
     </section>
@@ -76,26 +112,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <div class="service-box p-4 service1"  >
+                    <div class="service-box p-4 service1">
                         <i class="bi bi-briefcase" style="font-size: 2rem;"></i>
                         <h3 class="mt-3">Service 1</h3>
                         <p>Detail about service 1.</p>
                     </div>
+                    <div class="service-info" style="display:none;">
+                        <p>Additional information about Service 1.</p>
+                    </div>
                 </div>
+                
                 <div class="col-md-4 text-center">
                     <div class="service-box p-4 service2">
                         <i class="bi bi-card-checklist" style="font-size: 2rem;"></i>
                         <h3 class="mt-3">Service 2</h3>
                         <p>Detail about service 2.</p>
                     </div>
+                    <div class="service-info" style="display:none;">
+                        <p>Additional information about Service 2.</p>
+                    </div>
                 </div>
+                
                 <div class="col-md-4 text-center">
                     <div class="service-box p-4 service3">
                         <i class="bi bi-laptop" style="font-size: 2rem;"></i>
                         <h3 class="mt-3">Service 3</h3>
                         <p>Detail about service 3.</p>
                     </div>
+                    <div class="service-info" style="display:none;">
+                        <p>Additional information about Service 3.</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -164,13 +212,13 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-warning forum-control">Send Message</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-
+          
+    </div>
+</section>
     <!-- Footer -->
     <footer class="text-center py-4">
         <div class="container">
@@ -182,7 +230,11 @@
         </div>
     </footer>
 
-
+    <div class="swiper-container">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="swiper-wrapper"></div>
      <!-- Back to Top Button -->
      <button onclick="topFunction()" id="backToTopBtn" class="btn btn-primary">Top</button>
 
@@ -196,6 +248,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/index.js"></script>
-</div>
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.service-box').click(function(){
+            $(this).next('.service-info').slideToggle();
+        });
+    });
+    </script></div>
 </body>
 </html>

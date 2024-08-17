@@ -78,3 +78,22 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".content").style.display = "block";
     }, 3000); // Adjust the loading time as needed
 });
+
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+
+
+  $(document).ready(function(){
+    $('.service-box').click(function(){
+        // Find the next element after the clicked service box (the .service-info div)
+        $(this).next('.service-info').slideToggle();
+    });
+});
