@@ -97,3 +97,37 @@ var swiper = new Swiper('.swiper-container', {
         $(this).next('.service-info').slideToggle();
     });
 });
+
+
+new WOW().init();
+
+
+// const swiper = new Swiper('.swiper', {
+//     loop: true, 
+//     slidesPerView: "auto",
+//     centeredSlides: true,
+//     observeParents: !0,
+//     observer: !0
+//   });
+//   $(window).on('load', function() {
+//     $('.preloader').fadeOut();
+//     $('.content').fadeIn();
+// });
+
+
+$(document).ready(function(){
+    $('.slider-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+
+
+
+
+
+
+
