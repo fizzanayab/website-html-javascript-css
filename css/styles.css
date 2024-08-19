@@ -519,6 +519,25 @@ a {
     margin-top: 50px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #703b1d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #664015;
+}
+
   @-webkit-keyframes elastic1 {
     0% {
       transform: scale(1);
